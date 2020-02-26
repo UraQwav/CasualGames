@@ -48,10 +48,10 @@ public class MoveControl : MonoBehaviour
         HandBrake();
 
         //for tyre rotate
-        WheelFLtrans.Rotate(WheelFL.rpm / 60 * 360 * Time.deltaTime, 0, 0);
-        WheelFRtrans.Rotate(WheelFR.rpm / 60 * 360 * Time.deltaTime, 0, 0);
-        WheelRLtrans.Rotate(WheelRL.rpm / 60 * 360 * Time.deltaTime, 0, 0);
-        WheelRRtrans.Rotate(WheelRL.rpm / 60 * 360 * Time.deltaTime, 0, 0);
+        WheelFLtrans.Rotate(WheelFL.rpm / 60 * maxTorque * Time.deltaTime, 0, 0);
+        WheelFRtrans.Rotate(WheelFR.rpm / 60 * maxTorque * Time.deltaTime, 0, 0);
+        WheelRLtrans.Rotate(WheelRL.rpm / 60 * maxTorque * Time.deltaTime, 0, 0);
+        WheelRRtrans.Rotate(WheelRL.rpm / 60 * maxTorque * Time.deltaTime, 0, 0);
         //changing tyre direction
         Vector3 temp = WheelFLtrans.localEulerAngles;
         Vector3 temp1 = WheelFRtrans.localEulerAngles;
