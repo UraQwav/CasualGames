@@ -120,6 +120,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &601183136 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3454754472202404236, guid: 3663caf15f7e1e6488eb52e3fe482735,
+    type: 3}
+  m_PrefabInstance: {fileID: 8415247162980067613}
+  m_PrefabAsset: {fileID: 0}
+--- !u!146 &601183139 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 8430392138350657023, guid: 3663caf15f7e1e6488eb52e3fe482735,
+    type: 3}
+  m_PrefabInstance: {fileID: 8415247162980067613}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &749570202
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,6 +223,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!4 &784777399 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9190123641357079270, guid: 3663caf15f7e1e6488eb52e3fe482735,
+    type: 3}
+  m_PrefabInstance: {fileID: 8415247162980067613}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &907104718 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2758291110674518066, guid: 3663caf15f7e1e6488eb52e3fe482735,
+    type: 3}
+  m_PrefabInstance: {fileID: 8415247162980067613}
+  m_PrefabAsset: {fileID: 0}
+--- !u!146 &907104721 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 8161974675397982973, guid: 3663caf15f7e1e6488eb52e3fe482735,
+    type: 3}
+  m_PrefabInstance: {fileID: 8415247162980067613}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &957639700
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,7 +347,7 @@ Transform:
   m_LocalScale: {x: 0.25, y: 0.24999999, z: 0.25}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!81 &1089270910
 AudioListener:
@@ -383,6 +413,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 6879873301275262283}
+--- !u!4 &1443860786 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4559012482075284565, guid: 3663caf15f7e1e6488eb52e3fe482735,
+    type: 3}
+  m_PrefabInstance: {fileID: 8415247162980067613}
+  m_PrefabAsset: {fileID: 0}
+--- !u!146 &1443860789 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 3293655488886869851, guid: 3663caf15f7e1e6488eb52e3fe482735,
+    type: 3}
+  m_PrefabInstance: {fileID: 8415247162980067613}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1523593948
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,7 +556,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 07d538e99ac87db438c442e583a66aa9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 07d538e99ac87db438c442e583a66aa9,
         type: 3}
@@ -533,6 +575,48 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07d538e99ac87db438c442e583a66aa9, type: 3}
+--- !u!1 &2042046587 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2155420186652976709, guid: 3663caf15f7e1e6488eb52e3fe482735,
+    type: 3}
+  m_PrefabInstance: {fileID: 8415247162980067613}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2042046588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2042046587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d79c061d34290f141bc9a5fc67bb0ff9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  joystick: {fileID: 5799105477746086026}
+  centerOfMass: {fileID: 784777399}
+  WheelFL: {fileID: 601183139}
+  WheelFR: {fileID: 907104721}
+  WheelRL: {fileID: 1443860789}
+  WheelRR: {fileID: 2071678365}
+  WheelFLtrans: {fileID: 601183136}
+  WheelFRtrans: {fileID: 907104718}
+  WheelRLtrans: {fileID: 1443860786}
+  WheelRRtrans: {fileID: 2071678364}
+  motorTorque: 600
+  maxsteer: 20
+--- !u!4 &2071678364 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5114833714402009258, guid: 3663caf15f7e1e6488eb52e3fe482735,
+    type: 3}
+  m_PrefabInstance: {fileID: 8415247162980067613}
+  m_PrefabAsset: {fileID: 0}
+--- !u!146 &2071678365 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 2457988569204202233, guid: 3663caf15f7e1e6488eb52e3fe482735,
+    type: 3}
+  m_PrefabInstance: {fileID: 8415247162980067613}
+  m_PrefabAsset: {fileID: 0}
 --- !u!223 &2384858465209752136
 Canvas:
   m_ObjectHideFlags: 0
@@ -951,5 +1035,131 @@ PrefabInstance:
       propertyPath: FloatingJoystick
       value: 
       objectReference: {fileID: 5799105477746086026}
-    m_RemovedComponents: []
+    - target: {fileID: 2816461787754194527, guid: 3663caf15f7e1e6488eb52e3fe482735,
+        type: 3}
+      propertyPath: m_Mass
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8430392138350657023, guid: 3663caf15f7e1e6488eb52e3fe482735,
+        type: 3}
+      propertyPath: m_ForwardFriction.m_ExtremumSlip
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8430392138350657023, guid: 3663caf15f7e1e6488eb52e3fe482735,
+        type: 3}
+      propertyPath: m_ForwardFriction.m_ExtremumValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8430392138350657023, guid: 3663caf15f7e1e6488eb52e3fe482735,
+        type: 3}
+      propertyPath: m_SidewaysFriction.m_ExtremumSlip
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8430392138350657023, guid: 3663caf15f7e1e6488eb52e3fe482735,
+        type: 3}
+      propertyPath: m_SidewaysFriction.m_ExtremumValue
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8430392138350657023, guid: 3663caf15f7e1e6488eb52e3fe482735,
+        type: 3}
+      propertyPath: m_ForwardFriction.m_AsymptoteSlip
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8430392138350657023, guid: 3663caf15f7e1e6488eb52e3fe482735,
+        type: 3}
+      propertyPath: m_ForwardFriction.m_AsymptoteValue
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8161974675397982973, guid: 3663caf15f7e1e6488eb52e3fe482735,
+        type: 3}
+      propertyPath: m_ForwardFriction.m_ExtremumSlip
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8161974675397982973, guid: 3663caf15f7e1e6488eb52e3fe482735,
+        type: 3}
+      propertyPath: m_ForwardFriction.m_ExtremumValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8161974675397982973, guid: 3663caf15f7e1e6488eb52e3fe482735,
+        type: 3}
+      propertyPath: m_SidewaysFriction.m_ExtremumSlip
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8161974675397982973, guid: 3663caf15f7e1e6488eb52e3fe482735,
+        type: 3}
+      propertyPath: m_SidewaysFriction.m_ExtremumValue
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8161974675397982973, guid: 3663caf15f7e1e6488eb52e3fe482735,
+        type: 3}
+      propertyPath: m_ForwardFriction.m_AsymptoteSlip
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8161974675397982973, guid: 3663caf15f7e1e6488eb52e3fe482735,
+        type: 3}
+      propertyPath: m_ForwardFriction.m_AsymptoteValue
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293655488886869851, guid: 3663caf15f7e1e6488eb52e3fe482735,
+        type: 3}
+      propertyPath: m_ForwardFriction.m_ExtremumSlip
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293655488886869851, guid: 3663caf15f7e1e6488eb52e3fe482735,
+        type: 3}
+      propertyPath: m_ForwardFriction.m_ExtremumValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293655488886869851, guid: 3663caf15f7e1e6488eb52e3fe482735,
+        type: 3}
+      propertyPath: m_SidewaysFriction.m_ExtremumSlip
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293655488886869851, guid: 3663caf15f7e1e6488eb52e3fe482735,
+        type: 3}
+      propertyPath: m_SidewaysFriction.m_ExtremumValue
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293655488886869851, guid: 3663caf15f7e1e6488eb52e3fe482735,
+        type: 3}
+      propertyPath: m_ForwardFriction.m_AsymptoteSlip
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293655488886869851, guid: 3663caf15f7e1e6488eb52e3fe482735,
+        type: 3}
+      propertyPath: m_ForwardFriction.m_AsymptoteValue
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457988569204202233, guid: 3663caf15f7e1e6488eb52e3fe482735,
+        type: 3}
+      propertyPath: m_ForwardFriction.m_ExtremumSlip
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457988569204202233, guid: 3663caf15f7e1e6488eb52e3fe482735,
+        type: 3}
+      propertyPath: m_ForwardFriction.m_ExtremumValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457988569204202233, guid: 3663caf15f7e1e6488eb52e3fe482735,
+        type: 3}
+      propertyPath: m_SidewaysFriction.m_ExtremumSlip
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457988569204202233, guid: 3663caf15f7e1e6488eb52e3fe482735,
+        type: 3}
+      propertyPath: m_SidewaysFriction.m_ExtremumValue
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457988569204202233, guid: 3663caf15f7e1e6488eb52e3fe482735,
+        type: 3}
+      propertyPath: m_ForwardFriction.m_AsymptoteSlip
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457988569204202233, guid: 3663caf15f7e1e6488eb52e3fe482735,
+        type: 3}
+      propertyPath: m_ForwardFriction.m_AsymptoteValue
+      value: 0.75
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2155420186652976708, guid: 3663caf15f7e1e6488eb52e3fe482735, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3663caf15f7e1e6488eb52e3fe482735, type: 3}
